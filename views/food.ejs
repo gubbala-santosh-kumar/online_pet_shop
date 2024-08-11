@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Palce</title>
+    <link rel="stylesheet" href="/static/home_dashboard.css">
+    <link rel="stylesheet" href="/static/css_files/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="head_container">
+            <h1 class="main_text">Pet Palace</h1>
+            <ul class="head_list">
+                <li class="head_list_items"><a href="/home">Home</a></li>
+                <li class="head_list_items"><a href="/rating">Feedback / Rating</a></li>
+                <li class="head_list_items"><a href="/contact">Contact</a></li>
+                <li class="head_list_items"><a href="/signin">Sign Out</a></li>
+                <li class="head_list_items"><a href="/cart">My Cart</a></li>
+                <li class="head_list_items"><a href="/profile">Profile</a></li>
+            </ul>
+        </div>
+    </header><br>
+
+    <center>
+    <div class="decision_cards">
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/food/food1.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Pedigree</h2>
+                <p class="product-description">Pedigree Dog Food offers balanced nutrition with essential vitamins and minerals for your dog's health.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/food/food1.jpg', 'Pedigree', 'Pedigree Dog Food offers balanced nutrition with essential vitamins and minerals for your dogs health.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a>
+        <br>
+    
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/food/food2.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Drools</h2>
+                <p class="product-description">Drools Dog Food offers high-quality ingredients to support your dog's growth. Rich in protein help for health.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/food/food2.jpg', 'Drools', 'Drools Dog Food offers high-quality ingredients to support your dogs growth. Rich in protein help for health.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+    
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/food/food3.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Pedigree Combo</h2>
+                <p class="product-description">The Pedigree Combo Pack offers a delicious and nutritious mix of flavors to keep your dog happy and healthy.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/food/food3.jpg', 'Pedigree Combo', 'The Pedigree Combo Pack offers a delicious and nutritious mix of flavors to keep your dog happy and healthy.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/food/food4.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Biscuits</h2>
+                <p class="product-description">Biscuits are tasty treats that support healthy teeth and gums while providing essential nutrients.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/foods/food4.jpg', 'Biscuits', 'Biscuits are tasty treats that support healthy teeth and gums while providing essential nutrients.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+    </div>
+    <br>
+    <div class="decision_cards">
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/food/food5.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Salmon & Turkey</h2>
+                <p class="product-description">Pedigree Salmon & Turkey provides a delicious blend of flavors with high-quality protein to support your dog's muscle health.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/food/food5.jpg', 'Salmon & Turkey', 'Pedigree Salmon & Turkey provides a delicious blend of flavors with high-quality protein to support your dogs muscle health.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/food/food6.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Bark Bones</h2>
+                <p class="product-description">Bark Bones are durable chew toys made from safe materials, they help keep teeth clean and gums healthy.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/food/food6.jpg', 'Bark Bones', 'Bark Bones are durable chew toys made from safe materials, they help keep teeth clean and gums healthy.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/food/food7.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Every Dawg</h2>
+                <p class="product-description">Every Dawg offers a balanced blend of high-quality ingredients to support overall health and well-being.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/food/food7.jpg', 'Every Dawg', 'Every Dawg offers a balanced blend of high-quality ingredients to support overall health and well-being.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+    
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/food/food bowl.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Pet Food Bowl</h2>
+                <p class="product-description">The Pet Bowl is designed for convenience and durability, making mealtime easy and enjoyable for your pet.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/food/food bowl.jpg', 'Pet Food Bowl', 'The Pet Bowl is designed for convenience and durability, making mealtime easy and enjoyable for your pet.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+    </div>
+    </center>
+    <br>
+    <footer>
+        <center>
+            <ul class="footer_list">
+                <li class="footer_list_items"><i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>&ensp; pet_palace123@gmail.com</li><br>
+                <li class="footer_list_items"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>&ensp; 1808-008-808</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i>&ensp; pet_palace_fb</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i>&ensp; pet_palace-yt</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i>&ensp; pet_palace_insta</li><br>
+            </ul>
+        </center>
+    </footer>
+
+    <script>
+        function addToCart(id, name, description, price) {
+        fetch('/add-to-cart', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ id, name, description, price }),
+        }).then(response => {
+            if (response.ok) {
+                alert('Product added to cart');
+            } else {
+                alert('Error adding product to cart');
+            }
+        });
+    }
+    </script>
+</body>
+</html>

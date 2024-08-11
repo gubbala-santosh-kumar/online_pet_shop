@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Palce</title>
+    <link rel="stylesheet" href="/static/home_dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            width: 80%;
+            max-height: 60vh;
+            overflow-y: auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            font-size: 25px;
+        }
+
+        .product-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+        <div class="head_container">
+            <h1 class="main_text">Pet Palace</h1>
+            <ul class="head_list">
+                <li class="head_list_items"><a href="/home">Home</a></li>
+                <li class="head_list_items"><a href="/rating">Feedback / Rating</a></li>
+                <li class="head_list_items"><a href="/contact">Contact</a></li>
+                <li class="head_list_items"><a href="/signin">Sign Out</a></li>
+                <li class="head_list_items"><a href="/profile">Profile</a></li>
+            </ul>
+        </div>
+    </header><br>
+    
+    <h1>Your Cart</h1>
+    <% if (cart && cart.length > 0) { %>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% cart.forEach(item => { %>
+                        <tr>
+                            <td><img src="/static/images/shelters/<%= item.id %>" alt="<%= item.name %>" class="product-image"></td>
+                            <td><h2 class="product-name"><%= item.name %></h2></td>
+                            <td><p class="product-description"><%= item.description %></p></td>
+                            <td><p class="product-price">$<%= item.price %></p></td>
+                            <td><button onclick="removeFromCart('<%= item.id %>')">Remove</button></td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    <% } else { %>
+        <p>Your cart is empty.</p>
+    <% } %>
+
+
+
+
+
+    <footer>
+        <center>
+            <ul class="footer_list">
+                <li class="footer_list_items"><i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>&ensp; pet_palace123@gmail.com</li><br>
+                <li class="footer_list_items"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>&ensp; 1808-008-808</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i>&ensp; pet_palace_fb</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i>&ensp; pet_palace-yt</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i>&ensp; pet_palace_insta</li><br>
+            </ul>
+        </center>
+    </footer>
+</body>
+</html>

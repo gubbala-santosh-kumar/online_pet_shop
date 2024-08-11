@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Palce</title>
+    <link rel="stylesheet" href="/static/home_dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .get-more{
+            background-color: #2E236C;
+            color: white;
+            margin-left:80%;
+            text-decoration: none;
+            border: 1px solid none;
+            border-radius: 10px 100px 100px 10px;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px 40px;
+            box-shadow: 8px 12px 2px black;
+        }
+        .get-more:hover{
+            box-shadow: none;
+            background-color: #433D8B;
+        }
+        .home_text {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    h2{
+        font-size: 40px;
+    }
+    .section_links,.section_links_disable{
+        background-color: #17153B;
+        color: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 1px #C8ACD6;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .section_links:hover{
+        background-color: #C8ACD6;
+        color: #17153B;
+        box-shadow: none;
+    }
+    .section_links_disable:hover{
+        background-color: #C8ACD6;
+        color: #17153B;
+        box-shadow: none;
+        cursor:none;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="head_container">
+            <h1 class="main_text">Pet Palace</h1>
+            <ul class="head_list">
+                <li class="head_list_items"><a href="/home">Home</a></li>
+                <li class="head_list_items"><a href="#about">About</a></li>
+                <li class="head_list_items"><a href="/rating">Feedback</a></li>
+                <li class="head_list_items"><a href="/blog">Blog</a></li>
+                <li class="head_list_items"><a href="/contact">Contact</a></li>
+                <li class="head_list_items"><a href="/dashboard">Sign Out</a></li>
+                <li class="head_list_items"><a href="/profile">Profile</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="home_section">
+            <center>
+                <h2 class="home_text">Welcome To Pet Shop - Your Ultimate Pet Shop !</h2><br>
+                <br>
+                <a class="get-more" href="/decision">Get More</a>
+            </center>
+            
+        </div>
+    </section><br>
+
+    <section id="about">
+        <center>
+            <h2>About Us</h2>
+        <div class="about_section">
+            <img class="illustration" src="/static/images/illustrations/about.png" alt="" >
+            <center>
+                <div class="ct_btn">
+                    <p>Discover the story behind our Online Pet Shop, where we are dedicated to providing high-quality products and exceptional service for pet owners.
+                        Our mission is to ensure your pets' health and happiness with carefully selected items.
+                        Join our community of pet lovers who trust us for their furry friends' needs.</p><br><br>
+                    <a class="section_links" href="/decision">Know More</a>
+                </div>
+            </center>
+        </div>
+       </center>
+    </section><br>
+
+    <section id="blog">
+        <center>
+            <h2>Blog</h2>
+        </center>
+        <div class="blog_section">
+            <center>
+            <div class="ct_btn">
+                <p>Explore our blog for expert advice, tips, and stories about pet care, training, and health. 
+                    Stay informed with the latest trends and insights to keep your pets happy and healthy. 
+                    Join our community and engage with fellow pet enthusiasts!</p><br><br>
+                <a class="section_links" href="">Visit Out Blog</a>
+            </div>
+            </center>
+        <img class="illustration" src="/static/images/illustrations/blog.png" alt="" >
+        </div>
+    </section><br>
+
+    <section id="feedback">
+        <center>
+            <h2>Give Your Feedback</h2>
+        </center>
+        <div class="feedback_section">
+            <img class="illustration" src="/static/images/illustrations/rating.png" alt="" >
+            <center>
+                <div class="ct_btn">
+                    <p>Your feedback is invaluable to us as we strive to offer the best experience and products.
+                        Share your thoughts and suggestions to help us improve and better serve you and your pets. 
+                        We appreciate your input and look forward to hearing from you!</p><br><br>
+                    <a class="section_links" href="/rating">Give FeedBack</a>
+                </div>
+            </center>
+        </div>
+    </section><br>
+
+    <section id="health">
+        <center>
+            <h2>Health (Comming Soon....)</h2>
+        </center>
+        <div class="feedback_section">
+            <center>
+                <div class="ct_btn">
+                    <p>We're working on providing comprehensive resources for your pet's health and well-being. 
+                        Soon, you'll find expert advice, nutrition tips, and health guides to ensure your pets live their best lives. 
+                        Stay tuned for exciting updates!</p><br><br>
+                    <a class="section_links" href="/home">Book Appointment</a>
+                </div>
+            </center>
+            <img class="illustration" src="/static/images/illustrations/health.png" alt="" >
+        </div>
+    </section><br>
+
+    <footer>
+        <center>
+            <ul class="footer_list">
+                <li class="footer_list_items"><i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>&ensp; pet_palace123@gmail.com</li><br>
+                <li class="footer_list_items"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>&ensp; 1808-008-808</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i>&ensp; pet_palace_fb</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i>&ensp; pet_palace-yt</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i>&ensp; pet_palace_insta</li><br>
+            </ul>
+        </center>
+    </footer>
+</body>
+</html>

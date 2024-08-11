@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Palce</title>
+    <link rel="stylesheet" href="/static/home_dashboard.css">
+    <link rel="stylesheet" href="/static/css_files/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="head_container">
+            <h1 class="main_text">Pet Palace</h1>
+            <ul class="head_list">
+                <li class="head_list_items"><a href="/home">Home</a></li>
+                <li class="head_list_items"><a href="#">Feedback / Rating</a></li>
+                <li class="head_list_items"><a href="/contact">Contact</a></li>
+                <li class="head_list_items"><a href="/signin">Sign Out</a></li>
+                <li class="head_list_items"><a href="/cart">My Cart</a></li>
+                <li class="head_list_items"><a href="/profile">Profile</a></li>
+            </ul>
+        </div>
+    </header><br>
+
+    <center>
+    <div class="decision_cards">
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/breeds/breed1.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Beagle</h2>
+                <p class="product-description">Beagle Dogs are known for their friendly and curious nature.They are playful, intelligent, and great with children.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/breeds/breed1.jpg', 'Beagle', 'Beagle Dogs are known for their friendly and curious nature.They are playful, intelligent, and great with children.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+    
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/breeds/breed2.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">German Shepherd</h2>
+                <p class="product-description">German Shepherds are loyal dogs known for their intelligence and protective nature. They excel in various roles.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/breeds/breed2.jpg', 'German Shepherd', 'German Shepherds are loyal dogs known for their intelligence and protective nature. They excel in various roles.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/breeds/breed3.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Golden Retriever</h2>
+                <p class="product-description">Golden Retrievers are friendly and gentle demeanor. They are excellent family pets, known for their loyalty, intelligence.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/breeds/breed3.jpg', 'Golden Retriever', 'Golden Retrievers are friendly and gentle demeanor. They are excellent family pets, known for their loyalty, intelligence.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/breeds/breed4.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Doberman</h2>
+                <p class="product-description">Dobermans are powerful dogs with a keen sense of loyalty & protection. They are intelligent, and make excellent guard dogs</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/breeds/breed4.jpg', 'Doberman', 'Dobermans are powerful dogs with a keen sense of loyalty & protection. They are intelligent, and make excellent guard dogs', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+    </div>
+    <br>
+    <div class="decision_cards">
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/breeds/breed5.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Labradore</h2>
+                <p class="product-description">Labradors are friendly & outgoing dogs known for their intelligence & gentle nature. They make excellent family pets.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/breeds/breed5.jpg', 'Labradore', 'Labradors are friendly and outgoing dogs known for their intelligence & nature. They make excellent family pets, service dogs.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/breeds/breed6.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Shiba Inus</h2>
+                <p class="product-description">Shiba Inus are spirited and independent dogs with a fox-like appearance and charming personality. Known for their loyalty.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/breeds/breed6.jpg', 'Shiba Inus', 'Shiba Inus are spirited and independent dogs with a fox-like appearance and charming personality. Known for their loyalty.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/breeds/breed7.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Pomeranian</h2>
+                <p class="product-description">Pomeranians are small, spirited dogs with a vibrant personality and fluffy coat. They are affectionate, playful, and thrive on attention.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/breeds/breed7.jpg', 'Pomeranian', 'Pomeranians are small, spirited dogs with a vibrant personality and fluffy coat. They are affectionate, playful, and thrive on attention.', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/breeds/breed8.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Pug</h2>
+                <p class="product-description">Pugs are charming and affectionate dogs known for their wrinkled faces and playful personalities. They are excellent companions</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/breeds/breed8.jpg', 'Pug', 'Pugs are charming and affectionate dogs known for their wrinkled faces and playful personalities. They are excellent companions', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a>
+        <br>
+    </div>
+    </center>
+    <br>
+    <footer>
+        <center>
+            <ul class="footer_list">
+                <li class="footer_list_items"><i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>&ensp; pet_palace123@gmail.com</li><br>
+                <li class="footer_list_items"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>&ensp; 1808-008-808</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i>&ensp; pet_palace_fb</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i>&ensp; pet_palace-yt</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i>&ensp; pet_palace_insta</li><br>
+            </ul>
+        </center>
+    </footer>
+
+    <script src="/static/js_files/product.js"></script>
+
+</body>
+</html>

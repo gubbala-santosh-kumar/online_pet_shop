@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/static/home_dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .profile-container {
+            width: 60%;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-header {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 1px solid;
+        }
+
+        .profile-image input {
+            display: none;
+        }
+
+        .change-profile {
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            margin-top: 10px;
+            cursor: pointer;
+            margin:10px 410px;
+            padding:8px 0px;
+            border-radius: 5px;
+            background-color: #17153B;
+            font-weight: bold;
+        }
+        .change-profile:hover{
+            background-color: #C8ACD6;
+            color: #17153B;
+        }
+
+        .profile-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .profile-info input {
+            display: inline-block;
+            width: 40%;
+            margin: 10px 5px;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .profile-info textarea {
+            display: block;
+            width: 90%;
+            margin: 10px auto;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .save-button {
+            background-color: #17153B;
+            color: white;
+            border: none;
+            padding: 10px 50px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .save-button:hover {
+            background-color: #C8ACD6;
+            color: white;
+        }
+
+        .notification {
+            display: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 10px 0px 10px 10px;
+            position: fixed;
+            right: 10px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease, right 0.5s ease;
+        }
+
+        .notification.show {
+            display: block;
+            opacity: 1;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head_container">
+            <h1 class="main_text">Pet Palace</h1>
+            <ul class="head_list">
+                <li class="head_list_items"><a href="/home">Home</a></li>
+                <li class="head_list_items"><a href="/rating">Feedback / Rating</a></li>
+                <li class="head_list_items"><a href="/contact">Contact</a></li>
+                <li class="head_list_items"><a href="/signin">Sign Out</a></li>
+                <li class="head_list_items"><a href="/cart">My Cart</a></li>
+                <li class="head_list_items"><a href="/profile">Profile</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="profile-container">
+        
+        <div class="notification" id="notification">
+            Profile updated/saved successfully!
+        </div>
+
+        <div class="profile-header">PROFILE</div>
+        <div class="profile-image" onclick="document.getElementById('profileInput').click()">
+            <img id="profilePic" src="/static/images/alt_profile.jpg" alt="/static/images/alt_profile.jpg">
+            <input type="file" id="profileInput" accept="image/*" onchange="updateProfilePic(event)">
+        </div>
+        <div class="change-profile" onclick="document.getElementById('profileInput').click()">Change Profile Picture</div>
+        <form class="profile-info" id="profileForm" onsubmit="saveProfile(event)">
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            <input id="mobileNumber" type="tel" name="mobileNumber" placeholder="Enter your mobile number" required>
+            <input id="whatsappNumber" type="tel" name="whatsappNumber" placeholder="Enter your WhatsApp number" required>
+            <textarea style="width: 800px;" name="address" placeholder="Enter your address" rows="3" required></textarea>
+            <button type="submit" class="save-button">Save</button>
+        </form>
+    </div>
+
+    <footer>
+        <center>
+            <ul class="footer_list">
+                <li class="footer_list_items"><i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>&ensp; pet_palace123@gmail.com</li><br>
+                <li class="footer_list_items"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>&ensp; 1808-008-808</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i>&ensp; pet_palace_fb</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i>&ensp; pet_palace-yt</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i>&ensp; pet_palace_insta</li><br>
+            </ul>
+        </center>
+    </footer>
+
+    <script>
+        function updateProfilePic(event) {
+            const reader = new FileReader();
+            reader.onload = function () {
+                const profilePic = document.getElementById('profilePic');
+                profilePic.src = reader.result;
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+
+        function saveProfile(event) {
+            event.preventDefault(); // Prevent the form from actually submitting
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const mobileNumber = document.getElementById('mobileNumber').value;
+            const whatsappNumber = document.getElementById('whatsappNumber').value;
+            const address = document.querySelector('textarea[name="address"]').value;
+            const notification = document.getElementById('notification');
+
+            if (name && email && mobileNumber && whatsappNumber && address) {
+                // Show notification
+                notification.classList.add('show');
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 3000);
+            }
+        }
+    </script>
+</body>
+</html>

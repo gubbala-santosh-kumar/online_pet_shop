@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Palce</title>
+    <link rel="stylesheet" href="/static/home_dashboard.css">
+    <link rel="stylesheet" href="/static/css_files/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="head_container">
+            <h1 class="main_text">Pet Palace</h1>
+            <ul class="head_list">
+                <li class="head_list_items"><a href="/home">Home</a></li>
+                <li class="head_list_items"><a href="/rating">Feedback / Rating</a></li>
+                <li class="head_list_items"><a href="/contact">Contact</a></li>
+                <li class="head_list_items"><a href="/signin">Sign Out</a></li>
+                <li class="head_list_items"><a href="/cart">My Cart</a></li>
+                <li class="head_list_items"><a href="/profile">Profile</a></li>
+            </ul>
+        </div>
+    </header><br>
+
+    <center>
+    <div class="decision_cards">
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/clothing/cloth1.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Skirt</h2>
+                <p class="product-description">Explore more about different dog breeds and find the perfect match for your family. Discovers them!</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/clothing/cloth1.jpg', 'Skirt', 'Explore more about different dog breeds and find the perfect match for your family. Discovers them!', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a>
+        <br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/clothing/cloth2.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">T-shirt</h2>
+                <p class="product-description">Explore more about different pet toys and find the perfect one for your pet. Keep them entertained and active.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/clothing/cloth2.jpg', 'T-shirt', 'Explore more about different dog breeds and find the perfect match for your family. Discovers them!', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+    
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/clothing/cloth3.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Woolen T-shirt</h2>
+                <p class="product-description">Explore more about different pet foods and find the perfect diet for your pet. Ensure it contains nutritious</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/clothing/cloth3.jpg', 'Woolen T-shirt', 'Explore more about different dog breeds and find the perfect match for your family. Discovers them!', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/clothing/cloth4.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Shirt</h2>
+                <p class="product-description">Explore more about different pet tags and find the perfect one for your pet. Keep them safe and stylish.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/clothing/cloth4.jpg', 'shirt', 'Explore more about different dog breeds and find the perfect match for your family. Discovers them!', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+    </div>
+    <br>
+    <div class="decision_cards">
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/clothing/cloth5.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Hoodies</h2>
+                <p class="product-description">Explore more about different pet tags and find the perfect one for your pet. Keep them safe and stylish.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/clothing/cloth5.jpg', 'Hoodies', 'Explore more about different dog breeds and find the perfect match for your family. Discovers them!', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/clothing/cloth6.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Shirts</h2>
+                <p class="product-description">Explore more about different pet tags and find the perfect one for your pet. Keep them safe and stylish.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/clothing/cloth6.jpg', 'Shirts', 'Explore more about different dog breeds and find the perfect match for your family. Discovers them!', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/clothing/cloth7.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Frocks</h2>
+                <p class="product-description">Explore more about different pet shelters. Support a local pet shelter and help animals in need find loving homes.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/clothing/cloth7.jpg', 'Frocks', 'Explore more about different dog breeds and find the perfect match for your family. Discovers them!', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+        <a href="#" class="dog" style="text-decoration: none; color: black;">
+            <div class="product-card">
+                <img src="/static/images/clothing/cloth8.jpg" alt="Pet Product" class="product-image">
+                <h2 class="product-name">Sleeveless T-shirts</h2>
+                <p class="product-description">Explore more about different pet clothes and find the perfect outfit to keep your pet friend fashionable.</p>
+                <p class="product-price">$10.00</p>
+                <input type="submit" value="Add to cart" onclick="addToCart('/clothing/cloth8.jpg', 'Sleeveless T-shirts', 'Explore more about different dog breeds and find the perfect match for your family. Discovers them!', 10.00)" class="add-to-cart-btn">
+            </div>
+        </a><br>
+
+    </div>
+    </center>
+    <br>
+    <footer>
+        <center>
+            <ul class="footer_list">
+                <li class="footer_list_items"><i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i>&ensp; pet_palace123@gmail.com</li><br>
+                <li class="footer_list_items"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>&ensp; 1808-008-808</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i>&ensp; pet_palace_fb</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i>&ensp; pet_palace-yt</li><br>
+                <li class="footer_list_items"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i>&ensp; pet_palace_insta</li><br>
+            </ul>
+        </center>
+    </footer>
+
+    <script src="/static/js_files/product.js"></script>
+
+</body>
+</html>
